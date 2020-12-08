@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Order System</string>
+    <string name="logo">Logo</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="tv_register">Register</string>
+    <string name="login">Login</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="sweets">Sweets</string>
+    <string name="salads">Salads</string>
+    <string name="drinks">Drinks</string>
+    <string name="image">image</string>
+    <string name="_0">0$</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_description_will_appear_here">Food description will appear here!</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="order">ORDER</string>
+    <string name="total_000">Total: 000$</string>
+</resources>
