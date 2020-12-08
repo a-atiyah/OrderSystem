@@ -13,4 +13,7 @@ public interface UserDao {
     void registerUser(User user);
     @Query("DELETE FROM users")
     void deleteAll();
+
+    @Query("SELECT * FROM users WHERE mUsername = :username and mPassword= :password")
+    User login(String username, String password);
 }

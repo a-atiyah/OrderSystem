@@ -11,25 +11,22 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.a.atiyah.ordersystem.R;
+import com.a.atiyah.ordersystem.room.AppDatabase;
 import com.a.atiyah.ordersystem.room.model.User;
-import com.a.atiyah.ordersystem.room.UserDao;
-import com.a.atiyah.ordersystem.room.UserDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
 
     EditText mETUserName, mETEmail, mETPass, mETConfirmPass;
     Button mBtnRegister;
 
-    private UserDatabase mDB;
-    private UserDao mUserDao;
-
+    private AppDatabase mDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
         // Initialize database
-        mDB = UserDatabase.getInstance(getApplicationContext());
+        mDB = AppDatabase.getInstance(getApplicationContext());
 
         initUI();
 
@@ -77,7 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     void insert(User user) {
         new Thread(() -> {
-            mUserDao.registerUser(user);
+            mDB.userDao().registerUser(user);
             // Show a Toast on a ui thread
             runOnUiThread(new Runnable() {
                 @Override

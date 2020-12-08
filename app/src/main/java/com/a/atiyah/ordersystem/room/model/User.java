@@ -17,13 +17,13 @@ public class User {
     @ColumnInfo
     String mPassword;
 
+    @Ignore
     public User(String mUsername, String mEmail, String mPassword) {
         this.mUsername = mUsername;
         this.mEmail = mEmail;
         this.mPassword = mPassword;
     }
 
-    @Ignore
     public User(int mId, String mUsername, String mEmail, String mPassword) {
         this.mId = mId;
         this.mUsername = mUsername;

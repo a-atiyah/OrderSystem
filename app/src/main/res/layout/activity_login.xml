@@ -39,7 +39,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/et_login_activity_email"
+                android:id="@+id/et_login_activity_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/med_margin_8dp"
@@ -47,9 +47,9 @@
                 android:layout_marginTop="@dimen/larg_margin_16dp"
                 android:layout_marginEnd="@dimen/med_margin_8dp"
                 android:layout_marginRight="@dimen/med_margin_8dp"
-                android:autofillHints="@string/email"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+                android:autofillHints="@string/username"
+                android:hint="@string/username"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/et_login_activity_password"
