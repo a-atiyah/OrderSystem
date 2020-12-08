@@ -73,8 +73,8 @@
                 android:layout_marginTop="@dimen/larg_margin_16dp"
                 android:layout_marginEnd="@dimen/med_margin_8dp"
                 android:layout_marginRight="@dimen/med_margin_8dp"
-                android:autofillHints="@string/email"
-                android:hint="@string/email"
+                android:autofillHints="@string/password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:singleLine="true" />
 
@@ -87,8 +87,8 @@
                 android:layout_marginTop="@dimen/larg_margin_16dp"
                 android:layout_marginEnd="@dimen/med_margin_8dp"
                 android:layout_marginRight="@dimen/med_margin_8dp"
-                android:autofillHints="@string/password"
-                android:hint="@string/password"
+                android:autofillHints="@string/conf_password"
+                android:hint="@string/conf_password"
                 android:inputType="textPassword"
                 android:singleLine="true" />
 

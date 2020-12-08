@@ -20,4 +20,5 @@
     <string name="plus">+</string>
     <string name="order">ORDER</string>
     <string name="total_000">Total: 000$</string>
+    <string name="conf_password">Confirm Password</string>
 </resources>
